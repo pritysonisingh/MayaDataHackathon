@@ -20,7 +20,7 @@ const Table = ({ searchText }) => {
   };
 
   const handleDelete = (e) => {
-    setData(data.filter((item) => item.slno !== e.target.value));
+    setData(data.filter((item) => item.slno != e.target.value));
     console.log(e.target);
   };
 
@@ -62,17 +62,20 @@ const Table = ({ searchText }) => {
                     <td>{row.start_time}</td>
                     <td>{row.end_time}</td>
                     <td>
-                      <button onClick={(e) => handleDelete(e)} value={row.slno}>
-                        {/* <img src={deleteIcon} alt="delete" value={row.slno} /> */}
-                        Delete
-                      </button>
+                      <input
+                        type="image"
+                        src={deleteIcon}
+                        alt="delete"
+                        value={row.slno}
+                        onClick={(e) => handleDelete(e)}
+                      />
                     </td>
                   </tr>
                 );
               })}
 
             <tr>
-                <td>{data[data.length-1].slno+1}</td>
+              <td>{data[data.length - 1].slno + 1}</td>
               <td>
                 <input
                   type="text"

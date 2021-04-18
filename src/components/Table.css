@@ -16,10 +16,8 @@ th {
 }
 table {
   border-spacing: 0.1rem;
-  /* margin: auto; */
   padding: 2rem 1rem 0.5rem 1rem;
-  width: 70%;
-  /* background-color: #20273a; */
+  width: 100%;
 }
 
 th,
@@ -30,11 +28,3 @@ td {
 
   /* border: 0.1rem solid #20273a; */
 }
-.auto-serial {
-    counter-reset: serial-number;  /* Set the serial number counter to 0 */
-  }
-  
-  .auto-serial td:first-child:before {
-    counter-increment: serial-number;  /* Increment the serial number counter */
-    content: counter(serial-number);  /* Display the counter */
-  }
