@@ -82,6 +82,7 @@ const Table = ({ searchText }) => {
                   name="meeting_name"
                   value={values.meeting_name}
                   onChange={handleInputChange}
+                  autocomplete="off"
                 />
               </td>
               <td>
@@ -90,6 +91,7 @@ const Table = ({ searchText }) => {
                   name="people_attending"
                   value={values.people_attending}
                   onChange={handleInputChange}
+                  autocomplete="off"
                 />
               </td>
               <td>
@@ -98,6 +100,7 @@ const Table = ({ searchText }) => {
                   name="date"
                   value={values.date}
                   onChange={handleInputChange}
+                  autocomplete="off"
                 />
               </td>
               <td>
@@ -106,6 +109,7 @@ const Table = ({ searchText }) => {
                   name="start_time"
                   value={values.start_time}
                   onChange={handleInputChange}
+                  autocomplete="off"
                 />
               </td>
               <td>
@@ -114,6 +118,7 @@ const Table = ({ searchText }) => {
                   name="end_time"
                   value={values.end_time}
                   onChange={handleInputChange}
+                  autocomplete="off"
                 />
               </td>
               <button type="submit" onClick={handleAdd}>

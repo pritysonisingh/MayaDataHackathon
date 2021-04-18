@@ -17,22 +17,24 @@ const Search = () => {
           <form>
             <div class="flex-container">
               <div>
-                <input
-                  type="text"
-                  name="search2"
-                  value={text}
-                  onChange={(e) => onChangeHandler(e.target.value)}
-                  autoFocus
-                />
                 <button type="submit">
                   <img src={search} alt="icon" />
                 </button>
+                <input
+                  type="text"
+                  name="search2"
+                  placeholder="Search"
+                  value={text}
+                  onChange={(e) => onChangeHandler(e.target.value)}
+                  autoFocus
+                  autocomplete="off"
+                />
               </div>
-              <div>
+              <div style={{ fontSize: "24px" }}>
                 From:
                 <input type="date" />
               </div>
-              <div>
+              <div style={{ fontSize: "24px" }}>
                 To:
                 <input type="date" />
               </div>

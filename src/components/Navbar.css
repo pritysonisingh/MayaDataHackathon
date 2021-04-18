@@ -20,7 +20,6 @@
 
 .navbar {
   background-color:#f4f6f7;
-  ;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -29,10 +28,12 @@
 
 .menu-bar {
   margin-left: 2rem;
-  font-size: 2rem;
+  font-size: 24px;
   background: none;
-
+  color: white;
+  text-decoration: none;
 }
+
 .nav-menu {
   background-color:#1E5F74;
   ;
