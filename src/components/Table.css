@@ -1,0 +1,40 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.container {
+  padding: 2px 16px;
+  text-align: justify;
+  font-size: 24px;
+  margin:none;
+}
+
+th {
+  color: #1e5f74;
+  /* margin-right: 100px; */
+  /* margin-left: 20px; */
+}
+table {
+  border-spacing: 0.1rem;
+  /* margin: auto; */
+  padding: 2rem 1rem 0.5rem 1rem;
+  width: 70%;
+  /* background-color: #20273a; */
+}
+
+th,
+td {
+  padding: 0.625rem;
+  text-align: left;
+  font-size: 1rem;
+
+  /* border: 0.1rem solid #20273a; */
+}
+.auto-serial {
+    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+  }
+  
+  .auto-serial td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+  }

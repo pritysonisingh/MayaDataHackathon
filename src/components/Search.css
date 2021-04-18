@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  margin:none;
+  justify-content:space-evenly;
+}
+
+.flex-container > div {
+
+  /* margin: 10px; */
+  /* padding: 20px; */
+  font-size: 30px;
+  /* justify-content:space-between; */
+}

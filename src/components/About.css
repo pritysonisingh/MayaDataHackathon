@@ -1,0 +1,15 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.container {
+  padding: 2px 16px;
+  text-align: justify;
+  font-size: 24px;
+  margin-left: 300px;
+}
+.heading-text {
+  font-size: 36px;
+  text-align: left;
+  margin-left: 300px;
+}
